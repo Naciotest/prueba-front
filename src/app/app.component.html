@@ -1,0 +1,14 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="left">Left</label>
+    <input id="left" formControlName="left" type="text">
+  </div>
+  <div>
+    <label for="right">Left</label>
+    <input id="right" formControlName="right" type="text">
+  </div>
+  <button type="submit">Hacer petición</button>
+</form>
+<div>
+{{response | json}}
+</div>
